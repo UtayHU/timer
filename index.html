@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/timer.js"></script>
+	<title>Таймер</title>
+	<style>
+		#timer{
+			font-size: 2em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="timer">
+		<span class='years'></span>
+		<span> года(лет) </span>
+		<span class='months'></span>
+		<span> месяцев(месяц) </span>
+		<span class='days'></span>
+		<span> дня(дней) </span>
+		<br>
+		<span class='hours'></span>
+		<span> : </span>
+		<span class='minutes'></span>
+		<span> : </span>
+		<span class='seconds'></span>
+	</div>
+</body>
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		setTimer('timer', '2023-11-21');
+	});
+</script>
+
+</html>
